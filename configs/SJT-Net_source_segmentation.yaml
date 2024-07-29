@@ -1,0 +1,11 @@
+MODEL:
+  NAME: "SJTNet_mit"
+  FREEZE_BN: True
+DATASETS:
+  SOURCE_TRAIN: "potsdam_train"
+  TEST: "vaihingen_val"
+SOLVER:
+  BASE_LR: 0.0005
+  MAX_ITER: 80000
+  STOP_ITER: 80000
+  BATCH_SIZE: 4

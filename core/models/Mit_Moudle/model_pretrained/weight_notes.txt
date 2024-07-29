@@ -1,0 +1,1 @@
+You need to download the segformer pre-trained weights in this directory.

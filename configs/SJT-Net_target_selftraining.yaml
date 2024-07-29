@@ -1,0 +1,27 @@
+MODEL:
+  NAME: "SJTNet_mit"
+  FREEZE_BN: False
+
+DATASETS:
+  SOURCE_TRAIN: "vaihingen_self_train"
+#  SOURCE_TRAIN: "potsdam_self_train"
+
+  TEST: "vaihingen_val"
+#  TEST: "potsdam_val"
+
+INPUT:
+  SOURCE_INPUT_SIZE_TRAIN: (512, 512)
+  INPUT_SIZE_TEST: (512, 512)
+  INPUT_SCALES_TRAIN: (1.0, 1.0)
+  HORIZONTAL_FLIP_PROB_TRAIN: 0.5
+  BRIGHTNESS: 0.5
+  CONTRAST: 0.5
+  SATURATION: 0.5
+  HUE: 0.2
+
+SOLVER:
+  BASE_LR: 5e-4
+  MAX_ITER: 80000
+  STOP_ITER: 80000
+  CHECKPOINT_PERIOD: 8000
+  BATCH_SIZE: 4
