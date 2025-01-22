@@ -1,4 +1,4 @@
-# **Spatial Reconstructed Joint Training Transformer Network for Cross-Domain Remote Sensing Images Semantic Segmentation** <br />
+# **Spatial Reconstruction and Joint Training in Transformer Network for Cross-Domain Remote Sensing Images Semantic Segmentation** <br />
 
 This is a pytorch implementation of SJT-Net.
 
